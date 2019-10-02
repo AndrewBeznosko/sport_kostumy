@@ -334,7 +334,7 @@ h2 {
 
 .offer_section .info {
     padding: 85px 0 0;
-    height: 500px;
+    height: 600px;
     background: #153c58 url("../img/offer-bg.jpg") center top no-repeat;
     position: relative;
 }
@@ -398,7 +398,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     right: 165px;
-    top: 20px;
+    bottom: 60px;
     color: #fff;
     border: 3px solid #fff;
 }
@@ -409,7 +409,7 @@ h2 {
 }
 
 .offer_section .price_block {
-    margin: 0 0 30px;
+    margin: 0;
     position: relative;
 }
 
@@ -535,6 +535,33 @@ h2 {
 
 .offer_section .input:focus:-ms-input-placeholder {
     opacity: 0;
+}
+
+.offer_section .benefits_block_wrapp {
+    background: #fff;
+    padding: 45px 0 5px;
+    margin-bottom: 30px;
+}
+
+.offer_section .benefits_block {
+    margin: 0 auto 25px;
+    width: 402px;
+}
+
+.offer_section .benefits_block .benefit_item {
+    float: left;
+    padding: 0 5px;
+    width: 33.333333%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.offer_section .benefits_block img {
+    display: block;
+    margin: 0 auto 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 /* causes */
