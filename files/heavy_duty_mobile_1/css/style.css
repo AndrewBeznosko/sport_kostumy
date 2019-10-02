@@ -599,6 +599,14 @@ h2 {
     width: 47px;
     height: 47px;
 }
+.reviews3_section .gallery .owl-prev,
+.reviews3_section .gallery .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(140%);
+    width: 47px;
+    height: 47px;
+}
 
 .gallery .owl-prev {
     background: #f02119 url(../img/gallery_arrow.png) 0% 50% no-repeat;
@@ -612,6 +620,17 @@ h2 {
     right: 0;
 }
 
+.reviews3_section .gallery .owl-prev {
+    background: #f02119 url(../img/gallery_arrow.png) 0% 50% no-repeat;
+    border-radius: 0 6px 6px 0;
+    left: 5px;
+}
+
+.reviews3_section .gallery .owl-next {
+    background: #f02119 url(../img/gallery_arrow.png) 100% 50% no-repeat;
+    border-radius: 6px 0 0 6px;
+    right: 5px;
+}
 .causes_section .cause_item .image_block {
     margin: 0 0 25px;
     /*height: 160px;*/
