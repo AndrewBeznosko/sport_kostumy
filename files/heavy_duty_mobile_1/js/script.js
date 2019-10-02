@@ -12,8 +12,8 @@ $(document).ready(function() {
 		return false;
 	});
     /* timer */
-    
-    
+
+
     lastpack(2, 60, 'lastpack');
 
     $("a[href^='#']").click(function() {
