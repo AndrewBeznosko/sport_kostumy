@@ -1,9 +1,9 @@
-﻿<?php 
+﻿<?php
 //***************** Страница с завершением заказа ******************
 session_start();
 // формируем массив с товарами в заказе (если товар один - оставляйте только первый элемент массива)
 $products_list = array(
-    1 => array( 
+    1 => array(
             'product_id' => $_GET['product_id'],    //код товара (из каталога CRM)
             'count'      => '1'                      //количество товара 1
     )
@@ -25,13 +25,13 @@ $data = array(
     'delivery'        => $_GET['delivery'],        // способ доставки (id в CRM)
     'delivery_adress' => $_GET['delivery_adress'], // адрес доставки
     'payment'         => 'способ оплаты',          // вариант оплаты (id в CRM)
-    'utm_source'      => $_SESSION['utms']['utm_source'],  // utm_source 
-    'utm_medium'      => $_SESSION['utms']['utm_medium'],  // utm_medium 
-    'utm_term'        => $_SESSION['utms']['utm_term'],    // utm_term   
-    'utm_content'     => $_SESSION['utms']['utm_content'], // utm_content    
+    'utm_source'      => $_SESSION['utms']['utm_source'],  // utm_source
+    'utm_medium'      => $_SESSION['utms']['utm_medium'],  // utm_medium
+    'utm_term'        => $_SESSION['utms']['utm_term'],    // utm_term
+    'utm_content'     => $_SESSION['utms']['utm_content'], // utm_content
     'utm_campaign'    => $_SESSION['utms']['utm_campaign'] // utm_campaign
 );
- 
+
 // запрос
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, 'http://sewinglab.lp-crm.biz/api/addNewOrder.html');
@@ -129,7 +129,7 @@ curl_close($curl);
     .item img {
       width: 100%;
     }
-  </style>  
+  </style>
 
 
 <!-- Facebook Pixel Code -->
@@ -150,8 +150,26 @@ curl_close($curl);
   src="https://www.facebook.com/tr?id=434185300544298&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2511280095625144');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2511280095625144&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
-    
+
 <body>
   <article class="c-article">
     <header class="c-article__header">
